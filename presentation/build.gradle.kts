@@ -31,7 +31,7 @@ android {
         targetCompatibility = Project.javaVersion
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = Version.jetpackCompose
+        kotlinCompilerExtensionVersion = Version.UI.jetpackCompose
     }
     kotlinOptions {
         jvmTarget = "1.8"

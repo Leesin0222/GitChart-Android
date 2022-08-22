@@ -82,7 +82,6 @@ object Version {
         const val glide = "4.13.0"
     }
 
-
     object Socket {
         const val socket = "1.0.0"
     }
