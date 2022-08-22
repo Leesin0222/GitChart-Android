@@ -1,6 +1,6 @@
 package com.yongjincompany.data.remote.datasource
 
-import com.yongjincompany.data.remote.api.github.GitHubApi
+import com.yongjincompany.data.remote.api.GitHubApi
 import com.yongjincompany.data.remote.response.github.GithubProfileResponse
 import com.yongjincompany.data.remote.response.github.toEntity
 import com.yongjincompany.data.util.HttpHandler

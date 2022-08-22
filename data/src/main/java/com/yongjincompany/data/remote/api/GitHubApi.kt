@@ -1,4 +1,4 @@
-package com.yongjincompany.data.remote.api.github
+package com.yongjincompany.data.remote.api
 
 import com.yongjincompany.data.remote.response.github.GithubProfileResponse
 import retrofit2.http.GET
