@@ -27,7 +27,6 @@ object Dependency {
         const val android = "com.android.tools.build:gradle:${Version.GradlePlugin.gradle}"
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Version.GradlePlugin.kotlin}"
         const val hilt = "com.google.dagger:hilt-android-gradle-plugin:${Version.DI.hilt}"
-        const val service = "com.google.gms:google-services:${Version.GradlePlugin.service}"
     }
 
     object Test {
@@ -73,10 +72,6 @@ object Dependency {
         const val runTime = "androidx.lifecycle:lifecycle-runtime-ktx:${Version.Lifecycle.lifecycle}"
     }
 
-    object GooglePlayService {
-        const val auth = "com.google.android.gms:play-services-auth:${Version.GooglePlayService.googleAuth}"
-    }
-
     object ThreeTenAndroidBackport {
         const val threeTenAbp = "com.jakewharton.threetenabp:threetenabp:${Version.Test.threeTenAbp}"
     }
@@ -96,11 +91,6 @@ object Dependency {
     object WorkManager {
         const val ktx = "androidx.work:work-runtime-ktx:${Version.WorkManager.workManager}"
         const val hiltExtension = "androidx.hilt:hilt-work:${Version.WorkManager.workManagerHiltExtension}"
-    }
-
-    object FireBase {
-        const val fcm = "com.google.firebase:firebase-analytics-ktx:${Version.FireBase.fcm}"
-        const val message = "com.google.firebase:firebase-messaging:${Version.FireBase.message}"
     }
 
     object Permission {

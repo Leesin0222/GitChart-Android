@@ -62,8 +62,6 @@ dependencies {
 
     implementation(Dependency.LocalStorage.sharedPreference)
 
-    implementation(Dependency.FireBase.message)
-
     implementation(Dependency.Socket.socketIo){
         exclude (group = "org.json", module = "json")
     }

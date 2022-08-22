@@ -8,7 +8,6 @@ buildscript {
         classpath(Dependency.GradlePlugin.android)
         classpath(Dependency.GradlePlugin.kotlin)
         classpath(Dependency.GradlePlugin.hilt)
-        classpath(Dependency.GradlePlugin.service)
     }
 }
 
