@@ -1,12 +1,10 @@
-# GitChart
+# GitChart - 당신의 손에 깃허브
 
 <div align="center">
   <img width="200" alt="image" src="https://user-images.githubusercontent.com/68860610/159934286-45c89962-44b6-4ae7-adb2-1634386abc7c.png">
   
-  # GitChart - 당신의 손에 깃허브
+  ![Frame 1](https://user-images.githubusercontent.com/90879448/158016170-a80dd441-30fa-466c-8691-dbe77743409c.png)
 </div>
-
-![Frame 1](https://user-images.githubusercontent.com/90879448/158016170-a80dd441-30fa-466c-8691-dbe77743409c.png)
 
 
 <div align="center">
