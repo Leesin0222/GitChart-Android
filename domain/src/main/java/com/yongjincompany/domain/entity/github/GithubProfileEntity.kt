@@ -1,4 +1,4 @@
-package com.yongjincompany.domain.entity
+package com.yongjincompany.domain.entity.github
 
 data class GithubProfileEntity(
     val avatarUrl: String,

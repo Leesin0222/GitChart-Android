@@ -1,7 +1,7 @@
 package com.yongjincompany.data.remote.response.github
 
 import com.google.gson.annotations.SerializedName
-import com.yongjincompany.domain.entity.GithubProfileEntity
+import com.yongjincompany.domain.entity.github.GithubProfileEntity
 
 data class GithubProfileResponse(
     @SerializedName("avatar_url") val avatarUrl: String,
