@@ -1,6 +1,6 @@
 package com.yongjincompany.domain.usecase.github
 
-import com.yongjincompany.domain.entity.GithubProfileEntity
+import com.yongjincompany.domain.entity.github.GithubProfileEntity
 import com.yongjincompany.domain.repository.GithubRepository
 import com.yongjincompany.domain.usecase.UseCase
 import kotlinx.coroutines.flow.Flow

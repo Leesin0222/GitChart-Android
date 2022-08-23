@@ -1,6 +1,6 @@
 package com.yongjincompany.domain.repository
 
-import com.yongjincompany.domain.entity.GithubProfileEntity
+import com.yongjincompany.domain.entity.github.GithubProfileEntity
 import kotlinx.coroutines.flow.Flow
 
 interface GithubRepository {

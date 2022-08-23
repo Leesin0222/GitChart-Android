@@ -2,7 +2,7 @@ package com.yongjincompany.data.repository
 
 import com.yongjincompany.data.remote.datasource.RemoteGithubDataSource
 import com.yongjincompany.data.util.OfflineCacheUtil
-import com.yongjincompany.domain.entity.GithubProfileEntity
+import com.yongjincompany.domain.entity.github.GithubProfileEntity
 import com.yongjincompany.domain.repository.GithubRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
