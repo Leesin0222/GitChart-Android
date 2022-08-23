@@ -3,15 +3,17 @@ package com.yongjincompany.data.remote.datasource
 import com.yongjincompany.data.remote.api.ChartApi
 import com.yongjincompany.data.remote.response.chart.DayCommitResponse
 import com.yongjincompany.data.remote.response.chart.WeeklyCommitResponse
+import com.yongjincompany.data.remote.response.chart.YearCommitResponse
 import com.yongjincompany.data.remote.response.chart.toEntity
 import com.yongjincompany.data.util.HttpHandler
 import com.yongjincompany.domain.entity.chart.DayCommitEntity
 import com.yongjincompany.domain.entity.chart.WeeklyCommitEntity
+import com.yongjincompany.domain.entity.chart.YearCommitEntity
 import javax.inject.Inject
 
 class RemoteChartDataSourceImpl @Inject constructor(
-    private val chartApi: ChartApi
-): RemoteChartDataSource {
+    private val chartApi: ChartApi,
+) : RemoteChartDataSource {
     override suspend fun fetchDayCommit(userName: String): DayCommitEntity =
         HttpHandler<DayCommitResponse>()
             .httpRequest { chartApi.getDayCommit(userName) }
@@ -22,4 +24,8 @@ class RemoteChartDataSourceImpl @Inject constructor(
             .httpRequest { chartApi.getWeeklyCommit(userName) }
             .sendRequest().toEntity()
 
+    override suspend fun fetchYearCommit(userName: String): YearCommitEntity =
+        HttpHandler<YearCommitResponse>()
+            .httpRequest { chartApi.getYearCommit(userName) }
+            .sendRequest().toEntity()
 }
