@@ -4,6 +4,7 @@ import com.yongjincompany.data.remote.datasource.RemoteChartDataSource
 import com.yongjincompany.data.util.OfflineCacheUtil
 import com.yongjincompany.domain.entity.chart.DayCommitEntity
 import com.yongjincompany.domain.entity.chart.WeeklyCommitEntity
+import com.yongjincompany.domain.entity.chart.YearCommitEntity
 import com.yongjincompany.domain.repository.ChartRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
@@ -19,5 +20,10 @@ class ChartRepositoryImpl @Inject constructor(
     override suspend fun fetchWeeklyCommit(userName: String): Flow<WeeklyCommitEntity> =
         OfflineCacheUtil<WeeklyCommitEntity>()
             .remoteData { remoteChartDataSource.fetchWeeklyCommit(userName) }
+            .createFlow()
+
+    override suspend fun fetchYearCommit(userName: String): Flow<YearCommitEntity> =
+        OfflineCacheUtil<YearCommitEntity>()
+            .remoteData { remoteChartDataSource.fetchYearCommit(userName) }
             .createFlow()
 }
